@@ -11,7 +11,7 @@
     ~/.vimrc: vimrc
     ~/.zshrc.local: zshrc.local
     ~/.zshrc: zshrc
-    ~/.config/terminator/config: config/terminator
+    ~/.config/terminator/config: config/terminator/config
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
