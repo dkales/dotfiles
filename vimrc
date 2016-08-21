@@ -19,6 +19,7 @@ colorscheme molokai
 "---------------------
 " Basic editing config
 "---------------------
+set autoindent
 set nu " number lines
 "set rnu " relative line numbering
 set incsearch " incremental search (as string is being typed)
@@ -71,7 +72,6 @@ nnoremap <C-n> :set rnu!<CR>
 command -nargs=0 Sudow w !sudo tee % >/dev/null
 
 " clear search highlighting when pressing ESC
-nnoremap <esc> :noh<return><esc>
 
 
 "---------------------
@@ -85,9 +85,11 @@ nnoremap <Leader>f :NERDTreeFind<CR>
 " tagbar
 nnoremap <Leader>t :TagbarToggle<CR>
 
+" airline
+let g:airline_theme='molokai'
 
 " ctrlp
-nnoremap ; :CtrlPBuffer<CR>
+"nnoremap ; :CtrlPBuffer<CR>
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_show_hidden = 1
 
@@ -103,4 +105,18 @@ let g:syntastic_mode_map = {
 nnoremap <Leader>s :SyntasticCheck<CR>
 nnoremap <Leader>r :SyntasticReset<CR>
 nnoremap <Leader>i :SyntasticInfo<CR>
-nnoremap <Leader>m :SyntasticToggleMode<CR>
+nnoremap <Leader>m :SyntasticToggleMode<CR>o
+
+" markdown
+let g:markdown_fenced_languages = [
+    \ 'bash=sh',
+    \ 'c',
+    \ 'erb=eruby',
+    \ 'javascript',
+    \ 'json',
+    \ 'perl',
+    \ 'python',
+    \ 'ruby',
+    \ 'yaml',
+    \]
+
