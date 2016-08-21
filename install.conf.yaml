@@ -1,16 +1,17 @@
 - defaults:
-        link:
-                relink: true
+    link:
+        relink: true
 
 - clean: ['~']
 
 - shell:
-        - ["wget -O zshrc http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc", Downloading gmrl zshrc]
+    - ["wget -O zshrc http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc", Downloading gmrl zshrc]
 - link:
-        ~/.vim: vim
-        ~/.vimrc: vimrc
-        ~/.zshrc.local: zshrc.local
-        ~/.zshrc: zshrc
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.zshrc.local: zshrc.local
+    ~/.zshrc: zshrc
+    ~/.config/terminator/config: config/terminator
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]

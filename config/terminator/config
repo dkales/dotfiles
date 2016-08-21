@@ -1,0 +1,25 @@
+[global_config]
+  window_state = maximise
+[keybindings]
+  help = <Primary>F1
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#121212"
+    background_darkness = 0.93
+    background_image = None
+    background_type = transparent
+    font = Source Code Pro 11
+    foreground_color = "#ffffff"
+    palette = "#181915:#c01437:#498702:#c5bb63:#3465a4:#75507b:#4194b0:#d3d7cf:#45473c:#e00265:#6dca04:#e6db74:#1d71ca:#af5fff:#5cd1f8:#ffffff"
+    scrollback_infinite = True
+    scrollbar_position = hidden
