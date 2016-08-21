@@ -1,0 +1,4 @@
+alias scp-pw='scp -o PreferredAuthentications=password -o PubkeyAuthentication=no'
+alias tmpdir='cd $(mktemp -d)'
+
+PATH=$PATH:~/bin
