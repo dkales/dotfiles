@@ -107,6 +107,9 @@ nnoremap <Leader>r :SyntasticReset<CR>
 nnoremap <Leader>i :SyntasticInfo<CR>
 nnoremap <Leader>m :SyntasticToggleMode<CR>o
 
+" argwrap
+nnoremap <Leader>w :ArgWrap<CR>
+
 " markdown
 let g:markdown_fenced_languages = [
     \ 'bash=sh',

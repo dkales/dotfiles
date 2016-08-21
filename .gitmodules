@@ -46,3 +46,6 @@
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "vim/bundle/vim-argwrap"]
+	path = vim/bundle/vim-argwrap
+	url = https://github.com/foosoft/vim-argwrap.git
