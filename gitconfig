@@ -1,9 +1,23 @@
 [user]
 	name = Daniel Kales
 	email = daniel.kales@student.tugraz.at
+
 [push]
 	default = simple
+
+[color]
+    ui = auto
+
+[color "grep"]
+    match = cyan bold
+    selected = normal 
+    context = normal dim
+    filename = red bold 
+    linenumber = yellow
+    separator = white
+
 [grep]
     lineNumber = true
+
 [core]
     excludesfile = ~/.gitignore_global
