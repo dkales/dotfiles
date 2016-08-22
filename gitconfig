@@ -1,0 +1,9 @@
+[user]
+	name = Daniel Kales
+	email = daniel.kales@student.tugraz.at
+[push]
+	default = simple
+[grep]
+    lineNumber = true
+[core]
+    excludesfile = ~/.gitignore_global

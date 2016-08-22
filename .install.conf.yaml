@@ -12,6 +12,8 @@
     ~/.zshrc.local: zshrc.local
     ~/.zshrc: zshrc
     ~/.config/terminator/config: config/terminator/config
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
