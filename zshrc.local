@@ -1,3 +1,4 @@
+alias ssh-pw='ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no'
 alias scp-pw='scp -o PreferredAuthentications=password -o PubkeyAuthentication=no'
 alias tmpdir='cd $(mktemp -d)'
 
