@@ -12,6 +12,7 @@ syntax on
 
 filetype plugin indent on
 
+set t_Co=256
 colorscheme molokai
 
 
@@ -87,6 +88,7 @@ nnoremap <Leader>t :TagbarToggle<CR>
 
 " airline
 let g:airline_theme='molokai'
+let g:airline_powerline_fonts = 1
 
 " ctrlp
 "nnoremap ; :CtrlPBuffer<CR>
