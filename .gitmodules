@@ -22,12 +22,6 @@
 [submodule "vim/bundle/molokai"]
 	path = vim/bundle/molokai
 	url = https://github.com/tomasr/molokai.git
-[submodule "vim/bundle/ultisnips"]
-	path = vim/bundle/ultisnips
-	url = https://github.com/sirver/ultisnips.git
-[submodule "vim/bundle/vim-snippets"]
-	path = vim/bundle/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
@@ -50,3 +44,6 @@
 	path = vim/bundle/vim-argwrap
 	url = https://github.com/foosoft/vim-argwrap.git
     ignore = untracked
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
