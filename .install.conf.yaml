@@ -9,6 +9,7 @@
 - link:
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.ideavimrc: ideavimrc
     ~/.zshrc.local: zshrc.local
     ~/.zshrc: zshrc
     ~/.config/terminator/config: config/terminator/config
