@@ -1,6 +1,10 @@
 [global_config]
   window_state = maximise
 [keybindings]
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
+  go_up = <Alt>k
   help = <Primary>F1
 [layouts]
   [[default]]
@@ -20,7 +24,7 @@
     background_type = transparent
     font = Source Code Pro 11
     foreground_color = "#ffffff"
-    palette = "#181915:#c01437:#498702:#c5bb63:#3465a4:#75507b:#4194b0:#d3d7cf:#45473c:#e00265:#6dca04:#e6db74:#1d71ca:#af5fff:#5cd1f8:#ffffff"
+    palette = "#181915:#c01437:#498702:#c5bb63:#325bd0:#75507b:#4194b0:#d3d7cf:#45473c:#e00265:#6dca04:#e6db74:#1d71ca:#af5fff:#5cd1f8:#ffffff"
     scroll_on_output = False
     scrollback_infinite = True
     scrollbar_position = hidden
