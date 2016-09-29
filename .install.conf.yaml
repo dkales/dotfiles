@@ -15,6 +15,8 @@
     ~/.config/terminator/config: config/terminator/config
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.gdbinit : gdbinit
+    ~/.radare2rc : radare2rc
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
