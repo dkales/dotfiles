@@ -72,8 +72,15 @@ nnoremap <C-n> :set rnu!<CR>
 " save read-only files
 command -nargs=0 Sudow w !sudo tee % >/dev/null
 
-" clear search highlighting when pressing ESC
+"---------------------
+" Custom functions
+"---------------------
 
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    %s/\s\+$//e
+    call winrestview(l:save)
+endfun
 
 "---------------------
 " Plugin configuration
@@ -127,4 +134,6 @@ let g:markdown_fenced_languages = [
 
 " youcompleteme
 let g:ycm_confirm_extra_conf = 0 
+let g:ycm_global_ycm_extra_conf = '~/.vim/etc/.ycm_extra_conf_glob.py'
 let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:ycm_autoclose_preview_window_after_insertion = 1

@@ -24,7 +24,12 @@
     background_type = transparent
     font = Source Code Pro 11
     foreground_color = "#ffffff"
-    palette = "#181915:#c01437:#498702:#c5bb63:#325bd0:#75507b:#4194b0:#d3d7cf:#45473c:#e00265:#6dca04:#e6db74:#1d71ca:#af5fff:#5cd1f8:#ffffff"
+    palette = "#181915:#dd1101:#498702:#c5bb63:#325bd0:#75507b:#4194b0:#d3d7cf:#45473c:#e00265:#6dca04:#e6db74:#1d71ca:#af5fff:#5cd1f8:#ffffff"
     scroll_on_output = False
     scrollback_infinite = True
     scrollbar_position = hidden
+  [[light]]
+    background_color = "#ffffdd"
+    background_image = None
+    foreground_color = "#000000"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
