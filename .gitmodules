@@ -49,6 +49,3 @@
 [submodule "vim/bundle/vim-cmake-syntax"]
 	path = vim/bundle/vim-cmake-syntax
 	url = https://github.com/nickhutchinson/vim-cmake-syntax
-[submodule "vim/bundle/vimtex"]
-	path = vim/bundle/vimtex
-	url = https://github.com/lervag/vimtex
