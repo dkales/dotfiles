@@ -17,6 +17,7 @@
     ~/.gitignore_global: gitignore_global
     ~/.gdbinit : gdbinit
     ~/.radare2rc : radare2rc
+    ~/.tmux.conf : tmux.conf
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
