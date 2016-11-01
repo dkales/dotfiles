@@ -70,7 +70,10 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-n> :set rnu!<CR>
 
 " save read-only files
-command -nargs=0 Sudow w !sudo tee % >/dev/null
+command! -nargs=0 Sudow w !sudo tee % >/dev/null
+
+" toggle paste on F8
+nnoremap <F8> :set paste!<CR>
 
 "---------------------
 " Custom functions

@@ -18,6 +18,7 @@
     ~/.gdbinit : gdbinit
     ~/.radare2rc : radare2rc
     ~/.tmux.conf : tmux.conf
+    ~/.xinitrc : xinitrc
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
