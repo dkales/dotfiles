@@ -15,6 +15,12 @@ filetype plugin indent on
 set t_Co=256
 colorscheme molokai
 
+if &term =~ '256color'
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color tmux and GNU screen.
+  " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+  set t_ut=
+endif
 
 
 "---------------------
@@ -119,8 +125,6 @@ nnoremap <Leader>r :SyntasticReset<CR>
 nnoremap <Leader>i :SyntasticInfo<CR>
 nnoremap <Leader>m :SyntasticToggleMode<CR>o
 
-" argwrap
-nnoremap <Leader>w :ArgWrap<CR>
 
 " markdown
 let g:markdown_fenced_languages = [
@@ -140,3 +144,13 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/etc/.ycm_extra_conf_glob.py'
 let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+
+" vim-latex
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats = 'pdf'
+let g:Tex_CompileRule_pdf = 'mkdir -p out && pdflatex -output-directory=out -interaction=nonstopmode $* && mv out/$*.pdf .'
+let g:Tex_GotoError = 0
+let g:Tex_ViewRule_pdf = 'evince'
+
+
