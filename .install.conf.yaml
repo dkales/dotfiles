@@ -12,13 +12,18 @@
     ~/.ideavimrc: ideavimrc
     ~/.zshrc.local: zshrc.local
     ~/.zshrc: zshrc
-    ~/.config/terminator/config: config/terminator/config
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.gdbinit : gdbinit
     ~/.radare2rc : radare2rc
     ~/.tmux.conf : tmux.conf
     ~/.xinitrc : xinitrc
+    ~/.config/terminator/config: 
+        create: true
+        path: config/terminator/config
+    ~/.config/powerline/themes/powerline.json:
+        create: true
+        path: config/powerline/themes/powerline.json
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]

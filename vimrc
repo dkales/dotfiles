@@ -9,7 +9,6 @@ call pathogen#infect()
 call pathogen#helptags()
 
 syntax on
-
 filetype plugin indent on
 
 set t_Co=256
@@ -145,12 +144,13 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/etc/.ycm_extra_conf_glob.py'
 let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
-
 " vim-latex
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = 'latex'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats = 'pdf'
 let g:Tex_CompileRule_pdf = 'mkdir -p out && pdflatex -output-directory=out -interaction=nonstopmode $* && mv out/$*.pdf .'
 let g:Tex_GotoError = 0
-let g:Tex_ViewRule_pdf = 'evince'
+let g:Tex_ViewRule_pdf = 'evince 2> /dev/null'
 
 
