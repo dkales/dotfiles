@@ -80,6 +80,14 @@ command! -nargs=0 Sudow w !sudo tee % >/dev/null
 " toggle paste on F8
 nnoremap <F8> :set paste!<CR>
 
+"-------------------------
+" Abbr. (Spelling Fixes)
+"-------------------------
+
+iab inlcude include
+iab unsinged unsigned
+iab crpyto crypto
+
 "---------------------
 " Custom functions
 "---------------------
@@ -106,7 +114,7 @@ let g:airline_theme='molokai'
 let g:airline_powerline_fonts = 1
 
 " ctrlp
-"nnoremap ; :CtrlPBuffer<CR>
+nnoremap <Leader>p :CtrlPBuffer<CR>
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_show_hidden = 1
 
