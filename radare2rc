@@ -1,2 +1,10 @@
 e cfg.fortunes=false
 e cfg.fortunetype=""
+
+(markMemSymbolic address bytes name, #!pipe python2.7 /home/daniel/development/CTF/losfuzzys-toolkit/own_tools/r4ge/createVariable.py symb $0 $1 $2)
+(addHook address instructions bytes comment, #!pipe python2.7 /home/daniel/development/CTF/losfuzzys-toolkit/own_tools/r4ge/createVariable.py hook $0 $1 $2 $3)  
+(addAssert address assertion comment, #!pipe python2.7 /home/daniel/development/CTF/losfuzzys-toolkit/own_tools/r4ge/createVariable.py assert $0 $1 $2)
+(createScript name, #!pipe python2.7 /home/daniel/development/CTF/losfuzzys-toolkit/own_tools/r4ge/createScript.py $0)
+(callAddress, #!pipe python2.7 /home/daniel/development/CTF/losfuzzys-toolkit/own_tools/r4ge/callState.py)
+(callFunction retval, #!pipe python2.7 /home/daniel/development/CTF/losfuzzys-toolkit/own_tools/r4ge/callFunction.py $0)
+(r4ge, #!pipe python2.7 /home/daniel/development/CTF/losfuzzys-toolkit/own_tools/r4ge/r4ge.py)
