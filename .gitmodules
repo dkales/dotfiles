@@ -41,13 +41,12 @@
 	path = vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
     ignore = dirty
-[submodule "vim/bundle/YCM-Generator"]
-	path = vim/bundle/YCM-Generator
-	url = https://github.com/rdnetto/YCM-Generator
-    branch = stable
 [submodule "vim/bundle/vim-cmake-syntax"]
 	path = vim/bundle/vim-cmake-syntax
 	url = https://github.com/nickhutchinson/vim-cmake-syntax
 [submodule "vim/bundle/vim-latex"]
 	path = vim/bundle/vim-latex
 	url = https://github.com/vim-latex/vim-latex
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
