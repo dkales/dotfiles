@@ -24,6 +24,9 @@
     ~/.config/powerline/themes/powerline.json:
         create: true
         path: config/powerline/themes/powerline.json
+    ~/.sage/init.sage:
+        create: true
+        path: init.sage
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
