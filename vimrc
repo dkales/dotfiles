@@ -158,9 +158,11 @@ let g:tex_flavor = 'latex'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats = 'pdf'
 "let g:Tex_CompileRule_pdf = 'mkdir -p out && pdflatex -output-directory=out -interaction=nonstopmode $* && mv out/$*.pdf .'
+let g:Tex_CompileRule_pdf = 'pdflatex -interaction=nonstopmode -shell-escape $*'
 let g:Tex_GotoError = 0
 let g:Tex_ViewRule_pdf = 'evince 2> /dev/null'
-
+imap <C-g> <Plug>IMAP_JumpForward
+nmap <C-g> <Plug>IMAP_JumpForward
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<c-j>"
