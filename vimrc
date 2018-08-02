@@ -156,7 +156,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = 'latex'
 let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_MultipleCompileFormats = 'pdf'
+let g:Tex_MultipleCompileFormats = 'pdf,bib,pdf'
 "let g:Tex_CompileRule_pdf = 'mkdir -p out && pdflatex -output-directory=out -interaction=nonstopmode $* && mv out/$*.pdf .'
 let g:Tex_CompileRule_pdf = 'pdflatex -interaction=nonstopmode -shell-escape $*'
 let g:Tex_GotoError = 0

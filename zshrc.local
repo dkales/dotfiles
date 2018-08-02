@@ -13,9 +13,20 @@ zstyle ':prompt:grml:left:setup' items rc change-root virtual-env user at host p
 #powerline
 #powerline-daemon -q
 #source /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
+LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/development
-export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
-source /usr/bin/virtualenvwrapper_lazy.sh
+export VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+source /usr/share/virtualenvwrapper/virtualenvwrapper_lazy.sh
 #source /usr/bin/virtualenvwrapper.sh
+#
+
+SAVEHIST=50000
+HISTFILESIZE=50000
+HISTSIZE=50000
+setopt inc_append_history
+setopt share_history
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+FZF_TMUX=1

@@ -12,3 +12,4 @@ end
 document init-peda
     Initializes the PEDA (Python Exploit Development Assistant for GDB) framework, with heap helpers
 end
+source /home/dkales/local/pwndbg/gdbinit.py
