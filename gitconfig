@@ -20,6 +20,13 @@
 
 [alias]
 	whatadded = log --diff-filter=A
+	com = commit
+	co = checkout
+    pr = pull --rebase
+    pu = push
+    a  = add
+    ai = add -i
+    s  = status
 
 # Allow local customizations in the .gitconfig_local file
 [include]
