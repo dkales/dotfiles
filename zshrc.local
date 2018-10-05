@@ -28,5 +28,7 @@ HISTSIZE=50000
 setopt inc_append_history
 setopt share_history
 
+export GOPATH=$HOME/.go
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 FZF_TMUX=1

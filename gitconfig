@@ -23,7 +23,6 @@
 	com = commit
 	co = checkout
     pr = pull --rebase
-    pu = push
     a  = add
     ai = add -i
     s  = status
