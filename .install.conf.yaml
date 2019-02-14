@@ -9,6 +9,8 @@
 - link:
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.config/nvim: vim
+    ~/.config/nvim/init.vim: vimrc
     ~/.ideavimrc: ideavimrc
     ~/.zshrc.local: zshrc.local
     ~/.zshrc: zshrc
@@ -21,6 +23,9 @@
     ~/.config/terminator/config: 
         create: true
         path: config/terminator/config
+    ~/.config/kitty/kitty.conf: 
+        create: true
+        path: config/kitty/kitty.conf
     ~/.config/powerline/themes/powerline.json:
         create: true
         path: config/powerline/themes/powerline.json
