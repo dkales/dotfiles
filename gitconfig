@@ -1,6 +1,9 @@
 [push]
 	default = simple
 
+[pull]
+	rebase = true
+
 [color]
     ui = auto
 
@@ -29,4 +32,4 @@
 
 # Allow local customizations in the .gitconfig_local file
 [include]
-path = ~/.gitconfig_local
+path = ~/.gitconfig.local

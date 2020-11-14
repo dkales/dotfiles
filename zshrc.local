@@ -1,30 +1,12 @@
 alias ssh-pw='ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no'
 alias scp-pw='scp -o PreferredAuthentications=password -o PubkeyAuthentication=no'
 alias tmpdir='cd $(mktemp -d)'
-alias vim="nvim"
-alias vi="nvim"
-alias vimdiff="nvim -d"
-export EDITOR=nvim
+#alias vim="nvim"
+#alias vi="nvim"
+#alias vimdiff="nvim -d"
+export EDITOR=vim
 
 PATH=$PATH:~/bin
-
-function virtual_env_prompt () {
-    REPLY="${VIRTUAL_ENV+(${VIRTUAL_ENV:t}) }"
-}
-grml_theme_add_token virtual-env -f virtual_env_prompt
-zstyle ':prompt:grml:left:setup' items rc change-root virtual-env user at host path vcs percent
-
-#powerline
-#powerline-daemon -q
-#source /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
-LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
-
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/development
-export VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
-source /usr/share/virtualenvwrapper/virtualenvwrapper_lazy.sh
-#source /usr/bin/virtualenvwrapper.sh
-#
 
 SAVEHIST=50000
 HISTFILESIZE=50000
@@ -36,11 +18,10 @@ export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-export PATH=$HOME/.fzf/bin:$PATH
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-FZF_TMUX=1
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 
 autoload -Uz compinit
 compinit
-# Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
+
+eval "$(starship init zsh)"

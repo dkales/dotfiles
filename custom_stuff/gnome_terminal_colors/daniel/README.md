@@ -1,1 +1,0 @@
-# dkales custom color scheme

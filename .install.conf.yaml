@@ -9,29 +9,15 @@
 - link:
     ~/.vim: vim
     ~/.vimrc: vimrc
-    ~/.config/nvim: vim
-    ~/.config/nvim/init.vim: vimrc
-    ~/.ideavimrc: ideavimrc
     ~/.zshrc.local: zshrc.local
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.gdbinit : gdbinit
-    ~/.radare2rc : radare2rc
     ~/.tmux.conf : tmux.conf
-    ~/.xinitrc : xinitrc
-    ~/.config/terminator/config: 
+    ~/.config/starship.toml:
         create: true
-        path: config/terminator/config
-    ~/.config/kitty/kitty.conf: 
-        create: true
-        path: config/kitty/kitty.conf
-    ~/.config/powerline/themes/powerline.json:
-        create: true
-        path: config/powerline/themes/powerline.json
-    ~/.sage/init.sage:
-        create: true
-        path: init.sage
+        path: config/starship.toml
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
