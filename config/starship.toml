@@ -33,7 +33,7 @@ truncation_symbol = "..."
 #default symbols are ok
 
 [git_state]
-progress_divider = " of "
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
 cherry_pick = "🍒 PICKING"
 
 [git_commit]
@@ -50,7 +50,7 @@ style = "bold dimmed white"
 [jobs]
 # doc: https://starship.rs/config/#jobs
 symbol = "🏃️"
-threshold = 0
+threshold = 1
 format = "[$symbol$number]($style) "
 
 [battery]
@@ -65,7 +65,7 @@ style = "bold green"
 [time]
 disabled = false
 format = "🕙[$time ]($style)"
-style = "bold yellow"
+style = "yellow"
 use_12hr = false
 #time_format = "%Y/%m/%d %T"
 time_range="-"  # always: time_range="00:00:00-23:59:59"
@@ -80,10 +80,12 @@ error_symbol = "[❯](bold red) "
 
 [status]
 disabled = false
-symbol = "✗"
+symbol = ""
+style = "red"
 
 [cmd_duration]
 show_milliseconds = true
+style = "yellow"
 
 ########################################
 # disabled: prompt detail settings
