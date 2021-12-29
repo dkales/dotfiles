@@ -12,7 +12,6 @@
     ~/.zshrc.local: zshrc.local
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore_global
     ~/.gdbinit : gdbinit
     ~/.tmux.conf : tmux.conf
     ~/.config/starship.toml:
