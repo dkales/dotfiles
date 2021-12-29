@@ -26,6 +26,7 @@ truncation_symbol = "..."
 [git_branch]
 style = "bold purple"
 # symbol = "🌱 "
+symbol = " "
 truncation_length = 100  # no truncation
 truncation_symbol = "..."
 

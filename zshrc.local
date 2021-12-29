@@ -24,4 +24,6 @@ export PATH=$HOME/.cargo/bin:$PATH
 autoload -Uz compinit
 compinit
 
+# disable grml prompt and turn on starship
+prompt off
 eval "$(starship init zsh)"
