@@ -12,7 +12,7 @@ syntax on
 filetype plugin indent on
 
 set t_Co=256
-colorscheme codedark
+colorscheme monokai
 
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
