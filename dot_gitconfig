@@ -1,0 +1,38 @@
+[push]
+	default = simple
+
+[pull]
+	rebase = true
+
+[color]
+	ui = auto
+
+[color "grep"]
+	match = cyan bold
+	selected = normal 
+	context = normal dim
+	filename = red bold 
+	linenumber = yellow
+	separator = white
+
+[grep]
+	lineNumber = true
+
+[alias]
+	whatadded = log --diff-filter=A
+	com = commit
+	co = checkout
+	pr = pull --rebase
+	a  = add
+	ai = add -i
+	s  = status
+
+[user]
+	email = 11509575+dkales@users.noreply.github.com
+
+[init]
+	defaultBranch = main
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+	path = ~/.gitconfig.local
