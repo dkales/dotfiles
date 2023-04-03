@@ -1,0 +1,35 @@
+alias ssh-pw='ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no'
+alias scp-pw='scp -o PreferredAuthentications=password -o PubkeyAuthentication=no'
+alias tmpdir='cd $(mktemp -d)'
+alias vim="nvim"
+alias vi="nvim"
+alias vimdiff="nvim -d"
+export EDITOR=vim
+
+PATH=$PATH:~/bin
+
+SAVEHIST=50000
+HISTFILESIZE=50000
+HISTSIZE=50000
+setopt inc_append_history
+setopt share_history
+
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+
+mkdir -p $HOME/.local/share/zsh
+just --completions zsh > $HOME/.local/share/zsh-completions/_just
+fpath=($HOME/.local/share/zsh-completions $fpath)
+
+autoload -Uz compinit
+compinit
+
+# disable grml prompt and turn on starship
+prompt off
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+export MCFLY_KEY_SCHEME=vim
+
+ehere () {
+    explorer.exe .
+}
