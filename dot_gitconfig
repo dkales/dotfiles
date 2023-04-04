@@ -29,6 +29,7 @@
 
 [user]
 	email = 11509575+dkales@users.noreply.github.com
+	name = Daniel Kales
 
 [init]
 	defaultBranch = main
