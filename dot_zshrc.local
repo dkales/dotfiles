@@ -4,7 +4,7 @@ alias tmpdir='cd $(mktemp -d)'
 alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
-export EDITOR=vim
+export EDITOR=nvim
 
 PATH=$PATH:~/bin
 
@@ -26,10 +26,10 @@ compinit
 
 # disable grml prompt and turn on starship
 prompt off
-eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
-export MCFLY_KEY_SCHEME=vim
+eval "$(atuin init zsh)"
 
 ehere () {
     explorer.exe .
