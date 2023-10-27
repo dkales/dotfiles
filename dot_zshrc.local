@@ -28,8 +28,14 @@ compinit
 prompt off
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
 export MCFLY_KEY_SCHEME=vim
 
 ehere () {
     explorer.exe .
 }
+
+# nargo stuff
+export NARGO_HOME="/home/dkales/.nargo"
+
+export PATH="$PATH:$NARGO_HOME/bin"
