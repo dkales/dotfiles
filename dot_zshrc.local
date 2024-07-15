@@ -17,7 +17,7 @@ export PATH=$HOME/.local/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 
-mkdir -p $HOME/.local/share/zsh
+mkdir -p $HOME/.local/share/zsh-completions
 just --completions zsh > $HOME/.local/share/zsh-completions/_just
 fpath=($HOME/.local/share/zsh-completions $fpath)
 
