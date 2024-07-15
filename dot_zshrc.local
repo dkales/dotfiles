@@ -2,7 +2,6 @@ alias ssh-pw='ssh -o PreferredAuthentications=password -o PubkeyAuthentication=n
 alias scp-pw='scp -o PreferredAuthentications=password -o PubkeyAuthentication=no'
 alias tmpdir='cd $(mktemp -d)'
 alias vim="nvim"
-alias vi="nvim"
 alias vimdiff="nvim -d"
 export EDITOR=nvim
 
@@ -15,6 +14,7 @@ setopt inc_append_history
 setopt share_history
 
 export PATH=$HOME/.local/bin:$PATH
+export PATH=/usr/local/go/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 
 mkdir -p $HOME/.local/share/zsh
@@ -39,3 +39,5 @@ ehere () {
 export NARGO_HOME="/home/dkales/.nargo"
 
 export PATH="$PATH:$NARGO_HOME/bin"
+
+eval "$(keychain --eval --agents ssh id_ed25519 --quiet)"
