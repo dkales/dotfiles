@@ -1,0 +1,21 @@
+theme = "onedark"
+
+[editor]
+line-number = "relative"
+mouse = true
+color-modes = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+right = ["diagnostics", "file-encoding", "register", "position-percentage"]
+
+[editor.lsp]
+display-messages = true
