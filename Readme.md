@@ -3,10 +3,6 @@
 
 ## Requirements
 
-### NvChad install
-```bash
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
-```
 
 ### FiraMono Nerd Font
 https://www.nerdfonts.com/font-downloads
