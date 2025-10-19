@@ -30,6 +30,7 @@
 [user]
 	email = 11509575+dkales@users.noreply.github.com
 	name = Daniel Kales
+	# signingkey = "foo" in ~/.gitconfig.local
 
 [init]
 	defaultBranch = main
@@ -37,3 +38,13 @@
 # Allow local customizations in the .gitconfig_local file
 [include]
 	path = ~/.gitconfig.local
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
