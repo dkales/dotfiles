@@ -33,7 +33,7 @@ alias ehere="explorer.exe ."
 
 set -x NARGO_HOME "$HOME/.nargo"
 
-if status is-login and status is-interactive
+if status is-interactive
     keychain --eval $HOME/.ssh/id_ed25519 --quiet | source
 end
 
